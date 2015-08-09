@@ -1,4 +1,4 @@
-package com.hand.HelloWorld;
+package com.hand.XML;
 
 import java.io.File;
 import java.io.StringWriter;

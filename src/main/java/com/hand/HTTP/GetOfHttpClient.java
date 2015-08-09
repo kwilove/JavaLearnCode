@@ -1,4 +1,4 @@
-package com.hand.HelloWorld;
+package com.hand.HTTP;
 
 import java.io.IOException;
 
@@ -21,39 +21,37 @@ import org.apache.http.util.EntityUtils;
 
 public class GetOfHttpClient {
 
-	public static void main(String[] args) {		
-		new ReadByGet().start();
+	public static void main(String[] args) {
+		new ReadByHttpGet().start();
 	}
 
 }
 
-class ReadByGet extends Thread {
-	
-	//创建一个HttpClient对象
+class ReadByHttpGet extends Thread {
+
+	// 创建一个HttpClient对象
 	HttpClient client = HttpClients.createDefault();
-	
+
 	@Override
 	public void run() {
-		
-		String str = "http://fanyi.youdao.com/openapi.do"
-					+"?keyfrom=kwilove&key=314187409&type=data&doctype=json&version=1.1&q=welcome";
-		HttpGet get = new HttpGet(str);								//定义HttpGet对象访问URL
+
+		String url = "http://fanyi.youdao.com/openapi.do"
+				+ "?keyfrom=kwilove&key=314187409&type=data&doctype=json&version=1.1&q=welcome";
+		HttpGet get = new HttpGet(url); // 定义HttpGet对象访问URL
 		try {
-			
-			HttpResponse response = client.execute(get);			//执行get,获取响应
-			HttpEntity entity = response.getEntity();				//从响应response中获取消息实体
-			String result = EntityUtils.toString(entity, "UTF-8");	//将实体entity转换为指定编码的字符串
-			
+
+			HttpResponse response = client.execute(get); // 执行get,获取响应
+			HttpEntity entity = response.getEntity(); // 从响应response中获取消息实体
+			String result = EntityUtils.toString(entity, "UTF-8"); // 将实体entity转换为指定编码的字符串
+
 			System.out.println(result);
-		
+
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		
-		
+
 	}
-	
+
 }

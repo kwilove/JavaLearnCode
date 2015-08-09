@@ -1,4 +1,4 @@
-package com.hand.HelloWorld;
+package com.hand.JSON;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

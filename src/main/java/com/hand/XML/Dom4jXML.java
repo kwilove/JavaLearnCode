@@ -1,4 +1,4 @@
-package com.hand.HelloWorld;
+package com.hand.XML;
 
 import org.dom4j.Document;
 import org.dom4j.DocumentException;

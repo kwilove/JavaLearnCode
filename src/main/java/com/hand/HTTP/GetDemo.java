@@ -1,4 +1,4 @@
-package com.hand.HelloWorld;
+package com.hand.HTTP;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,8 +7,6 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
-
-import org.dom4j.Branch;
 
 public class GetDemo {
 
@@ -23,8 +21,9 @@ public class GetDemo {
 		 */
 		
 		try {
-			
-			URL url = new URL("http://www.baidu.com");			//访问的URL
+			String str = "http://fanyi.youdao.com/openapi.do"
+					+ "?keyfrom=kwilove&key=314187409&type=data&doctype=json&version=1.1&q=welcome";
+			URL url = new URL(str);			//访问的URL
 			URLConnection connection = url.openConnection();	//打开URL，得到响应
 			
 			//获取从URL返回的响应信息

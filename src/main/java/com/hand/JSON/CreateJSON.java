@@ -1,9 +1,9 @@
-package com.hand.HelloWorld;
+package com.hand.JSON;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-public class createJSON {
+public class CreateJSON {
 
 	public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package com.hand.HelloWorld;
+package com.hand.HTTP;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,8 +10,6 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-
-import org.dom4j.Branch;
 
 public class PostDemo {
 
