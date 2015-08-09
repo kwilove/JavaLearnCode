@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language cat="IT">
+	<lan id="1">
+		<name>JAVA</name>
+		<ide>Eclipse</ide>
+	</lan>
+	<lan id="2">
+		<name>PHP</name>
+		<ide>EPP</ide>
+	</lan>
+	<lan id="3">
+		<name>C#</name>
+		<ide>Visual studio</ide>
+	</lan>
+</language>
